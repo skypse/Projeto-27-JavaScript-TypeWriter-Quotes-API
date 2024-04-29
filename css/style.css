@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'neuropol_xregular';
+  src: url('/assets/neuropol-x-free.regular-webfont.woff') format('woff'),
+  url('/assets/neuropol-x-free.regular-webfont.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{ 
+  font-family: 'neuropol_xregular';
+  background: black;
+  color: #00FFFF;
+  
+  text-shadow: 0 0 10px #00FFFF;
+  padding: 20px;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#typewriter{
+  width: fit-content;
+  margin: auto;
+}
+
+#typewriter p{font-size: 1.5rem;}
+
+span{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+  50%{opacity: 0;}
+}
+
+@media(max-width:1280px){
+  .container{width: 95%;}
+}
+
+@media(max-width:480px){
+  #typewriter p{font-size: 1rem;}
+}
