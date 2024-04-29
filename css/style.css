@@ -16,6 +16,7 @@ body{
   padding: 20px;
   font-size: 22px;
   letter-spacing: 2px;
+  overflow: hidden;
 }
 
 .container{
